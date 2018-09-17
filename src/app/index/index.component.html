@@ -1,0 +1,97 @@
+<nb-layout>
+  <nb-layout-column style="padding: 0px;">
+    <div class="whole-div">
+      <div class="header-div">
+        <span class="header-text">GAEI&nbsp;-&nbsp;实验监控</span>
+        <div class="header-top"></div>
+        <div class="header-bottom">
+          <div class="header-bottom-top"></div>
+        </div>
+      </div>
+      <div class="left-div">
+        <div class="device-open">
+          <div class="border-left-top border-div"></div>
+          <div class="border-left-bottom border-div"></div>
+          <div class="border-right-top border-div"></div>
+          <div class="border-right-bottom border-div"></div>
+          <div class="device-header">设备使用率</div>
+          <ngx-gauge></ngx-gauge>
+        </div>
+        <div class="device-done">
+          <div class="border-left-top border-div"></div>
+          <div class="border-left-bottom border-div"></div>
+          <div class="border-right-top border-div"></div>
+          <div class="border-right-bottom border-div"></div>
+          <div class="device-header">设备完好率</div>
+          <ngx-gauge></ngx-gauge>
+        </div>
+        <div class="lab-div">
+          <div class="border-left-top border-div"></div>
+          <div class="border-left-bottom border-div"></div>
+          <div class="border-right-top border-div"></div>
+          <div class="border-right-bottom border-div"></div>
+          <ngx-bar></ngx-bar>
+        </div>
+      </div>
+      <div class="middle-div">
+        <div class="static-map">
+          <div class="border-left-top border-div"></div>
+          <div class="border-left-bottom border-div"></div>
+          <div class="border-right-top border-div"></div>
+          <div class="border-right-bottom border-div"></div>
+          <div class="header-map">
+            <div class="open-count">
+              <span class="map-text">总设备开通数:&nbsp;&nbsp;</span>
+              <span class="map-text device-num">135</span>
+            </div>
+            <div class="expr-count">
+              <span class="map-text">总完成实验数:&nbsp;&nbsp;</span>
+              <span class="map-text expr-num">3602</span>
+            </div>
+            <div></div>
+          </div>
+          <ngx-map></ngx-map>
+        </div>
+        <div class="kpi-div">
+          <div class="border-left-top border-div"></div>
+          <div class="border-left-bottom border-div"></div>
+          <div class="border-right-top border-div"></div>
+          <div class="border-right-bottom border-div"></div>
+          <ngx-kpi-bar></ngx-kpi-bar>
+        </div>
+  
+      </div>
+      <div class="right-div">
+        <div class="electry-div">
+          <div class="border-left-top border-div"></div>
+          <div class="border-left-bottom border-div"></div>
+          <div class="border-right-top border-div"></div>
+          <div class="border-right-bottom border-div"></div>
+          <ngx-electry-pie></ngx-electry-pie>
+        </div>
+
+        <div class="warn-div">
+          <div class="device-header">实时告警信息</div>
+          <div class="border-left-top border-div"></div>
+          <div class="border-left-bottom border-div"></div>
+          <div class="border-right-top border-div"></div>
+          <div class="border-right-bottom border-div"></div>
+          <ngx-warn-chat></ngx-warn-chat>
+
+        </div>
+
+        <div class="real-time">
+          <div class="device-header">实时实验信息</div>
+          <div class="border-left-top border-div"></div>
+          <div class="border-left-bottom border-div"></div>
+          <div class="border-right-top border-div"></div>
+          <div class="border-right-bottom border-div"></div>
+          <ngx-real-time></ngx-real-time>
+        </div>
+  
+      </div>
+    </div>
+    
+  </nb-layout-column>
+
+</nb-layout>

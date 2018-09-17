@@ -1,0 +1,11 @@
+<div class="show-real">
+    <div *ngFor="let item of data; let i=index" class="real-div">
+      <span style="display: inline-block; width: 52%;">
+        <span style="color: #2088b1;">[{{ item.date }}]</span>
+        <span style="color: #69c4fe">[{{ item.room }}]</span>
+        <span style="color: #f6f463">[{{ item.device }}]</span>&nbsp;&nbsp;
+      </span>:&nbsp;
+      <span><span style="color: #30e1f3">{{ item.pm }}</span><span style="color: #f93900">{{ item.status }}</span>编号<span style="color:aqua;font-weight: bold;">{{ item.eid }}</span>实验</span>
+  
+    </div>
+  </div>

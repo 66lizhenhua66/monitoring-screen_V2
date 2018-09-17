@@ -1,0 +1,11 @@
+<div class="show-warn">
+  <div *ngFor="let item of data; let i=index" class="warn-div">
+    <span style="display: inline-block; width: 52%;">
+      <span style="color: #2088b1;">[{{ item.date }}]</span>
+      <span style="color: #69c4fe">[{{ item.room }}]</span>
+      <span style="color: #f6f463">[{{ item.device }}]</span>&nbsp;&nbsp;
+    </span>:&nbsp;
+    <span style="color: red;">{{ item.mesg }}</span>
+
+  </div>
+</div>
