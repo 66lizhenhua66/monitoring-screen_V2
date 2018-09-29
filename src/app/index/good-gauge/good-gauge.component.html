@@ -1,0 +1,4 @@
+<div class="good-div">
+    <div echarts [options]="options" (chartInit)="onChartInit($event)" class="gauge-div"></div>
+    <span style="font-size: 16px" [ngStyle]="{color: rate_color}" >设备完好率</span>
+</div>

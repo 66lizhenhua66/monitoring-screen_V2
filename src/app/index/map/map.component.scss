@@ -5,11 +5,11 @@
 @include nb-install-component() {
 
   display: block;
-  height: 90%;
+  height: 100%;
   width: 100%;
 
   .leaflet-container {
-    height: 100%;
+    height: 85%;
     background-color: nb-theme(map-bg);
 
     @include nb-for-theme(default) {
@@ -115,4 +115,85 @@
 
 .mesg .person-text {
   color: #69c4fe;
+}
+
+.device-status {
+    height: 35%;
+}
+.static-map {
+    height: 65%;
+    position: relative;
+}
+.static-map .header-map {
+    height: 15%;
+    border-bottom: 1px solid #0d65b8;
+    border-top: 1px solid #0d65b8;
+}
+.header-map .map-text {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+    // height: 100%;
+    margin-top: 3.5%;
+    
+}
+.header-map .open-count .device-num {
+    color: yellow;
+    font-size: 2.7rem;
+    
+}
+.header-map .expr-count .expr-num {
+    color: #69c4fe;
+    font-size: 2.7rem;
+
+}
+.header-map .open-count {
+    height: 100%;
+    float: left;
+    width: 50%;
+    border-right:  1px solid #0d65b8;
+    text-align: center;
+    
+}
+.header-map .expr-count {
+    text-align: center;
+    height: 100%;
+    float: left;
+    width: 49%;
+}
+
+.device-header {
+    color: #69c4fe;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-indent: 1%;
+}
+.icon-div {
+  float: left;
+  margin-left: 2.5%;
+  margin-top: 25px;
+  width: 63px;
+  height: 78px;
+  overflow: hidden;
+  position: relative;
+}
+.device-icon {
+  color: white;
+  font-size: 4rem;
+}
+.device-name-span {
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.device-status-bg {
+  position: absolute;
+  top: 5px;
+  height: 35px;
+  width: 100%;
+  z-index: 0;
+  // color: white;
 }

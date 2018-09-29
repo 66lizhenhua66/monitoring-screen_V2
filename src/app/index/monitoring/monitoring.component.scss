@@ -1,0 +1,369 @@
+.whole-div {
+    background-image: url('/assets/images/monitoring-bg.png');
+    width: 1920px;
+    height: 1080px;
+}
+.toindex-div {
+    position: absolute;
+    top: 22px;
+    left: 746px;
+    height: 30px;
+    width: 419px;
+    z-index: 999;
+    cursor: pointer;
+    
+}
+.whole-div .border-div {
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    border-color: #00a0e9;
+}
+.border-left-top {
+    border-top: 2px solid ;
+    border-left: 2px solid;
+    top: 0px;
+    left: 0px;
+}
+.border-left-bottom {
+    border-bottom: 2px solid;
+    border-left: 2px solid;
+    bottom: 0px;
+    left: 0px;
+}
+.border-right-top {
+    border-top: 2px solid;
+    border-right: 2px solid;
+    top: 0px;
+    right: 0px;
+}
+.border-right-bottom {
+    border-bottom: 2px solid;
+    border-right: 2px solid;
+    right: 0px;
+    bottom: 0px;
+}
+
+.left-div {
+    margin-top: 66px;
+    float: left;
+    // height: 960px;
+    width: 650px;
+    box-sizing: border-box;
+    // border: 2px solid white;
+    // border: 1px solid #0d65b8;
+    position: relative;
+    margin-left: 1%;
+
+}
+.left-div .introduction-div {
+    width: 650px;
+    height: 334px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+.introduction-div .introduction-header {
+    height: 32px;
+    width: 100%;
+    border-left: 1px solid #00a0e9;
+    border-bottom: 1px solid #00a0e9;
+    position: relative;
+}
+
+.introduction-header span {
+    display: inline-block;
+    height: 31px;
+    width: 20%;
+    color: #00ffff;
+    font-size: 1.25rem;
+    font-weight: bold;
+    line-height: 32px;
+    padding-left: 14px;
+    border-top: 1px solid #00a0e9;
+    border-top-right-radius: 15px;
+    background-color: #00334a;
+    box-sizing: border-box;
+}
+
+.introduction-header div {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    margin-top: 10px;
+    width: 80%;
+    height: 20px;
+    box-sizing: border-box;
+    border-top: 1px solid #00a0e9;
+    border-right: 1px solid #00a0e9;
+    background-color: #00334a;
+}
+
+.introduction-div .introduction-body {
+    height: 300px;
+    box-sizing: border-box;
+    border: 1px solid #00a0e9;
+    background-color: #001823;
+    padding-top: 16px;
+    padding-right: 12px;
+    padding-left: 12px;
+}
+
+.introduction-body div {
+    text-indent: 36px;
+    font-size: 18px;
+    color: #00a0e9;
+}
+
+.introduction-body .china {
+    margin-bottom: 16px;
+    text-align: unset;
+}
+
+.introduction-body .english {
+    text-align: unset;
+
+}
+
+.images-div {
+    width: 100%;
+    height: 354px;
+    background-color: #001823;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.show-image {
+    position: relative;
+    width: 96%;
+    height: 95%;
+    top: 10px;
+    left: 2%;
+    overflow: hidden;
+
+}
+.show-image .scroll-div {
+    position: absolute;
+    width: 300%;
+    height: 100%;
+} 
+.image-1 {
+    float: left;
+    width: 624px;
+    height: 100%;
+    background-image: url(/assets/images/device_1.jpg);
+    background-size: 100% 100%;
+}
+.image-2 {
+    float: left;
+    width: 624px;
+    height: 100%;
+    background-image: url(/assets/images/device_2.jpg);
+    background-size: 100% 100%;
+
+}
+.image-3 {
+    float: left;
+    width: 624px;
+    height: 100%;
+    background-image: url(/assets/images/device_3.jpg);
+    background-size: 100% 100%;
+
+}
+
+.gauge-div {
+    height: 300px;
+
+}
+.gauge-div .gauge-header {
+    height: 32px;
+    width: 100%;
+    border-left: 1px solid #00a0e9;
+    border-bottom: 1px solid #00a0e9;
+    position: relative;
+}
+
+.gauge-header span {
+    display: inline-block;
+    height: 31px;
+    width: 36%;
+    color: #00ffff;
+    font-size: 1.25rem;
+    font-weight: bold;
+    line-height: 32px;
+    padding-left: 14px;
+    border-top: 1px solid #00a0e9;
+    border-top-right-radius: 15px;
+    background-color: #00334a;
+    box-sizing: border-box;
+}
+
+.gauge-header div {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    margin-top: 10px;
+    width: 64%;
+    height: 20px;
+    box-sizing: border-box;
+    border-top: 1px solid #00a0e9;
+    border-right: 1px solid #00a0e9;
+    background-color: #00334a;
+}
+
+.gauge-div .gauge-body {
+    height: 250px;
+    box-sizing: border-box;
+    border: 1px solid #00a0e9;
+    
+    width: 100%;
+}
+
+.total-status {
+    height: 20%;
+    width: 100%;
+}
+.total-status span {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+
+}
+.total-status .total-open {
+    padding-top: 12px;
+    float: left;
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    border-bottom: 1px solid #00a0e9;
+    border-right: 1px solid #00a0e9;
+    text-align: center;
+}
+
+.total-status .total-run {
+    padding-top: 12px;
+    text-align: center;
+    float: left;
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    border-bottom: 1px solid #00a0e9;
+    border-left: 1px solid #00a0e9;
+
+}
+
+.gauge {
+    height: 80%;
+}
+
+.middle-div {
+    float: left;
+    width: 1200px;
+    margin-left: 1%;
+    position: relative;
+    margin-top: 66px;
+}
+
+.status-div {
+    width: 100%;
+    height: 316px;
+    margin-bottom: 17px;
+}
+
+.status-div .status-header {
+    height: 32px;
+    width: 100%;
+    border-right: 1px solid #00a0e9;
+    border-bottom: 1px solid #00a0e9;
+    position: relative;
+}
+
+.status-header span {
+    height: 31px;
+    width: 13%;
+    color: #00ffff;
+    font-size: 1.25rem;
+    font-weight: bold;
+    line-height: 32px;
+    text-align: right;
+    // padding-left: 58px;
+    padding-right: 14px;
+    border-top: 1px solid #00a0e9;
+    border-top-left-radius: 15px;
+    background-color: #00334a;
+    box-sizing: border-box;
+    float: right;
+}
+
+.status-header div {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    margin-top: 10px;
+    width: 87%;
+    height: 20px;
+    box-sizing: border-box;
+    border-top: 1px solid #00a0e9;
+    border-left: 1px solid #00a0e9;
+    background-color: #00334a;
+}
+
+.status-div .status-body {
+    height: 280px;
+    box-sizing: border-box;
+    border: 1px solid #00a0e9;
+    border-right: 0;
+    border-bottom: 0;
+    // padding-top: 16px;
+    // padding-right: 12px;
+    // padding-left: 12px;
+    position: relative;
+}
+
+// .status-body .status-div {
+//     position: absolute;
+//     width: 100%;
+//     height: 100%;
+// }
+
+.status-body table {
+    width: 100%;
+    height: 100%;
+}
+.status-body table tr td {
+    width: 9.09%;
+    height: 30%;
+    border-right: 1px solid #00a0e9;
+    border-bottom: 1px solid #00a0e9;
+    text-align: center;
+}
+.status-body table tr td span {
+    cursor: pointer;
+}
+
+.status-body table img {
+    width: 46px;
+    height: 46px;
+}
+.status-body table div {
+    margin-bottom: 8px;
+}
+
+.status-body table span {
+    font-size: 17px;
+}
+
+.map-div {
+    width: 100%;
+    height: 662px;
+    position: relative;
+    border: 1px solid #00a0e9;
+    
+}
+
+.map-div .logo-img {
+    position: absolute;
+    top: 14px;
+    left: 36px;
+    z-index: 999;
+}

@@ -1,11 +1,30 @@
-<div class="show-real">
-    <div *ngFor="let item of data; let i=index" class="real-div">
-      <span style="display: inline-block; width: 52%;">
-        <span style="color: #2088b1;">[{{ item.date }}]</span>
-        <span style="color: #69c4fe">[{{ item.room }}]</span>
-        <span style="color: #f6f463">[{{ item.device }}]</span>&nbsp;&nbsp;
-      </span>:&nbsp;
-      <span><span style="color: #30e1f3">{{ item.pm }}</span><span style="color: #f93900">{{ item.status }}</span>编号<span style="color:aqua;font-weight: bold;">{{ item.eid }}</span>实验</span>
-  
-    </div>
-  </div>
+<nb-layout>
+    <nb-layout-column style="padding: 0px;">
+      <div (mousemove)="mouseMove($event)" class="all">
+          <div class="header-bottom"></div>
+        <!-- <div class="top"> 
+            <span (click)="start()">欢迎领导莅临考察工作</span>
+        </div> -->
+        <div *ngIf="showFinished" class="finish-div" >
+            <div class="finish-text">播放结束</div>
+            <div>
+                <span (click)="rePlay()" class="finish-replay">重新播放</span>
+                <span (click)="toIndex()" class="finish-router">监控页面</span>
+            </div>
+
+        </div>
+        <div style="position: fixed; z-index: 998; bottom: 10px;" [@ControlsAnimation]="showPlayClass">
+            <img *ngIf="!isPlaying" (click)="togglePlay()" src="/assets/images/play.png" alt="play-icon">
+            <img *ngIf="isPlaying" (click)="togglePlay()" src="/assets/images/pause.png" alt="play-icon">
+            <img (click)="rePlay()" src="/assets/images/refresh.png" alt="play-icon">
+        </div>
+        <span [@ControlsAnimation]="showRouterClass"  (click)="toIndex()" class="router">监控页面</span>
+        <div class="video">
+            <video #videoElement (ended)="onEnded()" ></video>
+        </div>
+        <!-- <div class="bottom">
+            <span>人为本&nbsp;&nbsp;&nbsp;&nbsp;信为道&nbsp;&nbsp;&nbsp;&nbsp;创为先</span>
+        </div> -->
+      </div>
+  </nb-layout-column>
+</nb-layout>

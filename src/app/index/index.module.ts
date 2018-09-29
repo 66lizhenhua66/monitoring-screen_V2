@@ -14,6 +14,9 @@ import { RealTimeComponent } from './real-time/real-time.component';
 import { LeafletModule } from '@asymmetrik/ngx-leaflet';
 import { InfiniteListModule } from 'angular-infinite-list';
 import { MapComponent } from './map/map.component';
+import { GoodGaugeComponent } from './good-gauge/good-gauge.component';
+import { MonitoringComponent } from './monitoring/monitoring.component';
+import { NewMapComponent } from './new-map/new-map.component';
 
 
 @NgModule({
@@ -35,6 +38,9 @@ import { MapComponent } from './map/map.component';
     WarnChatComponent,
     RealTimeComponent,
     MapComponent,
+    GoodGaugeComponent,
+    MonitoringComponent,
+    NewMapComponent,
   ],
 })
 export class IndexModule {

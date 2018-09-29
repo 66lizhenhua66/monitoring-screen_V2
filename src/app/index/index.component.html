@@ -2,94 +2,46 @@
   <nb-layout-column style="padding: 0px;">
     <div class="whole-div">
       <div class="header-div">
-        <span class="header-text">GAEI&nbsp;-&nbsp;实验监控</span>
+        <span class="header-text" (click)="onClick($event.target)" >GAC&nbsp;R&D&nbsp;试验室设备监控平台</span>
         <div class="header-top"></div>
         <div class="header-bottom">
           <div class="header-bottom-top"></div>
         </div>
       </div>
       <div class="left-div">
+        <div class="border-left-top border-div"></div>
+        <div class="border-left-bottom border-div"></div>
+        <div class="border-right-top border-div"></div>
+        <div class="border-right-bottom border-div"></div>
+        <div class="introduction-div">
+          <div class="introduction-text">
+            动力总成实验室主要承担动力总成及零部件产品开发阶段的试制试验工作。能够进行每年约600台发动机、变速箱样机试制，并完成性能开发、可靠性验证等多项任务，具备完整的动力总成产品正向开发验证体系及试制试验能力。
+          </div>
+          <div class="introduction-img">
+            <div [@flyIn] class="image-1"></div>
+            <div class="image-2"></div>
+            <div class="image-3"></div>
+          </div>
+        </div>
         <div class="device-open">
-          <div class="border-left-top border-div"></div>
-          <div class="border-left-bottom border-div"></div>
-          <div class="border-right-top border-div"></div>
-          <div class="border-right-bottom border-div"></div>
           <div class="device-header">设备使用率</div>
+          <div style="height: 8%;width: 100%;"></div>
           <ngx-gauge></ngx-gauge>
         </div>
         <div class="device-done">
-          <div class="border-left-top border-div"></div>
-          <div class="border-left-bottom border-div"></div>
-          <div class="border-right-top border-div"></div>
-          <div class="border-right-bottom border-div"></div>
           <div class="device-header">设备完好率</div>
-          <ngx-gauge></ngx-gauge>
-        </div>
-        <div class="lab-div">
-          <div class="border-left-top border-div"></div>
-          <div class="border-left-bottom border-div"></div>
-          <div class="border-right-top border-div"></div>
-          <div class="border-right-bottom border-div"></div>
-          <ngx-bar></ngx-bar>
+          <div style="height: 8%;width: 100%;"></div>
+          <ngx-good-gauge></ngx-good-gauge>
         </div>
       </div>
       <div class="middle-div">
-        <div class="static-map">
-          <div class="border-left-top border-div"></div>
-          <div class="border-left-bottom border-div"></div>
-          <div class="border-right-top border-div"></div>
-          <div class="border-right-bottom border-div"></div>
-          <div class="header-map">
-            <div class="open-count">
-              <span class="map-text">总设备开通数:&nbsp;&nbsp;</span>
-              <span class="map-text device-num">135</span>
-            </div>
-            <div class="expr-count">
-              <span class="map-text">总完成实验数:&nbsp;&nbsp;</span>
-              <span class="map-text expr-num">3602</span>
-            </div>
-            <div></div>
-          </div>
-          <ngx-map></ngx-map>
-        </div>
-        <div class="kpi-div">
-          <div class="border-left-top border-div"></div>
-          <div class="border-left-bottom border-div"></div>
-          <div class="border-right-top border-div"></div>
-          <div class="border-right-bottom border-div"></div>
-          <ngx-kpi-bar></ngx-kpi-bar>
-        </div>
-  
+        <div class="border-left-top border-div"></div>
+        <div class="border-left-bottom border-div"></div>
+        <div class="border-right-top border-div"></div>
+        <div class="border-right-bottom border-div"></div>
+        <ngx-map></ngx-map>
       </div>
-      <div class="right-div">
-        <div class="electry-div">
-          <div class="border-left-top border-div"></div>
-          <div class="border-left-bottom border-div"></div>
-          <div class="border-right-top border-div"></div>
-          <div class="border-right-bottom border-div"></div>
-          <ngx-electry-pie></ngx-electry-pie>
-        </div>
 
-        <div class="warn-div">
-          <div class="device-header">实时告警信息</div>
-          <div class="border-left-top border-div"></div>
-          <div class="border-left-bottom border-div"></div>
-          <div class="border-right-top border-div"></div>
-          <div class="border-right-bottom border-div"></div>
-          <ngx-warn-chat></ngx-warn-chat>
-
-        </div>
-
-        <div class="real-time">
-          <div class="device-header">实时实验信息</div>
-          <div class="border-left-top border-div"></div>
-          <div class="border-left-bottom border-div"></div>
-          <div class="border-right-top border-div"></div>
-          <div class="border-right-bottom border-div"></div>
-          <ngx-real-time></ngx-real-time>
-        </div>
-  
-      </div>
     </div>
     
   </nb-layout-column>

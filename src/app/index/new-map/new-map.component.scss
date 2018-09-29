@@ -1,0 +1,124 @@
+@import '../../@theme/styles/themes';
+@import '~bootstrap/scss/mixins/breakpoints';
+@import '~@nebular/theme/styles/global/bootstrap/breakpoints';
+
+@include nb-install-component() {
+
+  display: block;
+  height: 100%;
+  width: 100%;
+
+  .leaflet-container {
+    height: 100%;
+    background-color: nb-theme(map-bg);
+
+    @include nb-for-theme(default) {
+    //   background-color: 'red';
+    }
+
+    @include nb-for-theme(corporate) {
+    //   background-color: nb-theme(color-white);
+    }
+  }
+
+  /deep/ .leaflet-bar {
+    box-shadow: none;
+  }
+
+  /deep/ .leaflet-control-zoom {
+    border: none;
+
+    a {
+      background-color: nb-theme(color-success);
+      color: nb-theme(color-white);
+      border-bottom: none;
+      height: 2.5rem;
+
+      @include nb-for-theme(cosmic) {
+        background-color: nb-theme(color-primary);
+      }
+
+      @include nb-for-theme(corporate) {
+        background-color: nb-theme(color-primary);
+      }
+    }
+
+    .leaflet-control-zoom-in {
+      border-top-left-radius: nb-theme(btn-border-radius);
+      border-top-right-radius: nb-theme(btn-border-radius);
+    }
+
+    .leaflet-control-zoom-out {
+      margin-top: 1px;
+      border-bottom-left-radius: nb-theme(btn-border-radius);
+      border-bottom-right-radius: nb-theme(btn-border-radius);
+    }
+  }
+
+  /deep/ .leaflet-control-attribution {
+    background: transparent;
+
+    a {
+      color: nb-theme(color-fg);
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    width: 100%;
+    height: 50%;
+  }
+}
+
+.static-map {
+    height: 100%;
+    width: 100%;
+
+}
+
+.mesg-div {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  height: 160px;
+  width: 180px;
+  background-color: #0f0a0a;
+  opacity: 0.7;
+  z-index: 999;
+}
+.mesg-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #00ffff;
+  text-align: center;
+  height: 36px;
+  line-height: 36px;
+  margin-bottom: 5px;
+  border-bottom:1px solid #0d65b8;
+}
+.mesg {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+  // text-align: center;
+  text-indent: 10px;
+  height: 26px;
+  line-height: 26px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.mesg span {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.mesg .run-text {
+  color: #05fd2e;
+}
+
+.mesg .device-text {
+  color: yellow;
+}
+
+.mesg .person-text {
+  color: #69c4fe;
+}

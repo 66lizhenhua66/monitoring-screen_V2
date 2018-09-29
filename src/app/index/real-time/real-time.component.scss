@@ -1,7 +1,87 @@
-.real-div {
-    text-indent: 5px;
-    margin-top: 5px;
+.all {
+    position: relative;
+    width: 1920px;
+    height: 1080px;
 }
-.real-div span {
-    font-size: 16px;
+.all .header-bottom {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(/assets/images/header&bottom.png);
+    z-index: 900;
 }
+
+.all .router {
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    z-index: 999;
+    color: #00ffff;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.all .router:hover {
+    cursor: pointer;
+}
+
+.all .play {
+    font-size: 4rem;
+}
+
+.all .play:hover {
+    cursor: pointer;
+}
+
+.all .loop {
+    font-size: 3.5rem;
+}
+
+.all .loop:hover {
+    cursor: pointer;
+}
+
+.all .video {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.finish-div {
+    position: fixed;
+    width: 20%;
+    text-align: center;
+    height: 16%;
+    z-index: 9999;
+    background-color: white;
+    opacity: 0.7;
+    top: 42%;
+    left: 40%;
+}
+
+.finish-div .finish-text {
+    color: black;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.finish-div .finish-replay {
+    cursor: pointer;
+    margin-right: 20px;
+    font-size: 2rem;
+    color: black;
+}
+
+.finish-div .finish-router {
+    cursor: pointer;
+    font-size: 2rem;
+    color: black;
+}
+.finish-div div {
+    margin-top: 5%;
+}
+
+.finish-div div span:hover {
+    color: #00ffff;
+}
+
+

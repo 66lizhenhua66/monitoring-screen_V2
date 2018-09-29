@@ -1,0 +1,20 @@
+<div class="static-map">
+    <div leaflet [leafletOptions]="options" [leafletLayers]="layers" (leafletMapReady)="mapReady($event)"></div>
+    <div class="mesg-div">
+        <div class="mesg-title">
+            {{ selected_room.room.title }}
+        </div>
+        <div class="mesg">
+            正在运行设备:&nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="run-text">{{ selected_room.room.run_devices }}</span>
+        </div>
+        <div class="mesg">
+            实验室总设备:&nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="device-text">{{ selected_room.device_status.length }}</span>
+        </div>
+        <div class="mesg">
+            实验室总人数:&nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="person-text">{{ selected_room.room.total_person }}</span>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,141 @@
+<nb-layout>
+    <nb-layout-column style="padding: 0px;">
+      <div class="whole-div">
+        <div (click)="toWelcome()" class="toindex-div"></div>
+
+        <div class="left-div">
+          <!-- <div class="border-left-top border-div"></div>
+          <div class="border-left-bottom border-div"></div>
+          <div class="border-right-top border-div"></div>
+          <div class="border-right-bottom border-div"></div> -->
+          <div class="introduction-div">
+            <div class="introduction-header">
+              <span>试验室介绍</span>
+              <div></div>
+            </div>
+            <div class="introduction-body">
+              <div class="china">
+                动力总成实验室主要承担动力总成及零部件产品开发阶段的试制试验工作。能够进行每年约600台发动机、变速箱样机试制，并完成性能开发、可靠性验证等多项任务，具备完整的动力总成产品正向开发验证体系及试制试验能力。
+              </div>
+              <div class="english">
+                Powertrain Test Lab is principally responsible for the development and  trial-manufacture task for powertrain and components, which possesses the  sophisticated capacity for original design and preproduction test on powertrain system. 600 engines or transmissions could be trial-produced and multi-task such as engine performance development, reliability demonstration could be carried out annually. 
+              </div>
+            </div>
+          </div>
+
+          <div class="images-div">
+            <div class="border-left-top border-div"></div>
+            <div class="border-left-bottom border-div"></div>
+            <div class="border-right-top border-div"></div>
+            <div class="border-right-bottom border-div"></div>
+            <div class="show-image">
+              <div [@ImageAnimation]='expandState' class="scroll-div">
+                <div class="image-1"></div>
+                <div class="image-2"></div>
+                <div class="image-3"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gauge-div">
+            <div class="gauge-header">
+              <span>试验室设备总体运行情况</span>
+              <div></div>
+            </div>
+            <div class="gauge-body">
+              <div class="total-status">
+                <div class="total-open">
+                  <span>总设备开通数&nbsp;:&nbsp;&nbsp;</span> 
+                  <span style="color: #00ec2d; font-size: 24px">
+                    {{ all_rooms[0].device_status.length + all_rooms[1].device_status.length + all_rooms[2].device_status.length + all_rooms[3].device_status.length }}
+                  </span>
+                </div>
+                <div class="total-run">
+                  <span>总运行小时数&nbsp;:&nbsp;&nbsp;</span> 
+                  <span style="color: #00f5fd; font-size: 24px">12</span>
+                </div>
+              </div>
+
+              <div class="gauge">
+                <ngx-gauge></ngx-gauge>
+                <ngx-good-gauge></ngx-good-gauge>
+              </div>
+
+
+            </div>
+            <!-- <div class="device-open">
+              <div class="device-header">设备使用率</div>
+              <div style="height: 8%;width: 100%;"></div>
+              <ngx-gauge></ngx-gauge>
+            </div>
+            <div class="device-done">
+              <div class="device-header">设备完好率</div>
+              <div style="height: 8%;width: 100%;"></div>
+              <ngx-good-gauge></ngx-good-gauge>
+            </div> -->
+
+          </div>
+
+
+        </div>
+        <div class="middle-div">
+         
+          <div class="status-div">
+            <div class="status-header">
+              <span>{{ selected_room.room.title }}</span>
+              <div></div>
+            </div>
+            <div class="status-body">
+              <table>
+                <tbody>
+                  <tr>
+                    <td *ngFor="let device of array_1; let i=index;">
+                      <span (click)="toDevice(device)" *ngIf="device !== 0">
+                        <div>
+                          <img [src]="device.status === '运行' ? '/assets/images/run.png' : '/assets/images/stop.png'">
+                        </div>
+                        <span style="font-size: 14px;" [ngStyle]="{color: device.status === '运行' ? '#008ac9' : 'red'}" >
+                          {{ device.device_name }}
+                        </span>
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td *ngFor="let device of array_2; let i=index;">
+                      <span *ngIf="device !== 0">
+                        <div>
+                          <img [src]="device.status === '运行' ? '/assets/images/run.png' : '/assets/images/stop.png'">
+                        </div>
+                        <span style="font-size: 14px;" [ngStyle]="{color: device.status === '运行' ? '#008ac9' : 'red'}" >
+                          {{ device.device_name }}
+                        </span>
+                      </span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+            </div>
+
+          </div>
+
+          <div class="map-div">
+            <div class="border-left-top border-div"></div>
+            <div class="border-left-bottom border-div"></div>
+            <div class="border-right-top border-div"></div>
+            <div class="border-right-bottom border-div"></div>
+            <img class="logo-img" src="/assets/images/logo.png" alt="gac-logo">
+
+            <ngx-new-map (selected)="clickRoom($event)" ></ngx-new-map>
+
+
+          </div>
+
+
+        </div>
+  
+      </div>
+      
+    </nb-layout-column>
+  
+  </nb-layout>

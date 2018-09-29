@@ -48,25 +48,34 @@
 .left-div {
     float: left;
     height: 960px;
-    width: 25%;
+    width: 35%;
     box-sizing: border-box;
     // border: 2px solid white;
+    border: 1px solid #0d65b8;
+    position: relative;
     margin-left: 1%;
 
 }
+.left-div .introduction-div {
+    height: 35%;
+    border-bottom: 1px solid #0d65b8;
+    box-sizing: border-box;
+}
 .left-div .device-open {
-    height: 30%;
-    border: 1px solid #0d65b8;
+    height: 32.5%;
+    border-bottom: 1px solid #0d65b8;
+    box-sizing: border-box;
     position: relative;
     overflow: hidden;
-    margin-bottom: 5%;
 }
 .device-header {
     color: #69c4fe;
-    font-size: 1.5rem;
+    width: 100%;
+    font-size: 2.5rem;
     font-weight: bold;
+    position: absolute;
+    top: 1%;
     text-indent: 2%;
-    margin-top: 1%;
 }
 .whole-div .border-div {
     position: absolute;
@@ -100,103 +109,41 @@
 }
 
 .left-div .device-done {
-    height: 30%;
-    border: 1px solid #0d65b8;
+    height: 32.5%;
+    box-sizing: border-box;
     position: relative;
-    margin-bottom: 5%;
     overflow: hidden;
-}
-
-.left-div .lab-div {
-    height: 35%;
-    border: 1px solid #0d65b8;
-    position: relative;
 }
 
 .middle-div {
     float: left;
     height: 960px;
-    width: 46%;
+    width: 62%;
     box-sizing: border-box;
     margin-left: 1%;
-
-}
-.middle-div .static-map {
-    height: 62.5%;
     border: 1px solid #0d65b8;
     position: relative;
 }
-.static-map .header-map {
-    height: 10%;
-    border-bottom: 1px solid #0d65b8;
-}
-.header-map .map-text {
-    font-size: 2rem;
+
+.introduction-text {
+    text-indent: 20px;
+    font-size: 1.3rem;
     font-weight: bold;
-    color: #fff;
-    display: inline-block;
-    // height: 100%;
-    margin-top: 2.5%;
-    
+    color: white;
+    position: absolute;
+    width: 100%;
 }
-.header-map .open-count .device-num {
-    color: yellow;
-    font-size: 2.2rem;
-    
-}
-.header-map .expr-count .expr-num {
-    color: #69c4fe;
-    font-size: 2.2rem;
 
-}
-.header-map .open-count {
+.introduction-img {
+    overflow: hidden;
+    width: 100%;
     height: 100%;
-    float: left;
-    width: 50%;
-    border-right:  1px solid #0d65b8;
-    text-align: center;
-    
+    position: relative;
 }
-.header-map .expr-count {
-    text-align: center;
+.image-1 {
+    width: 100%;
     height: 100%;
-    float: left;
-    width: 49%;
-}
-.middle-div .kpi-div {
-    height: 35%;
-    margin-top: 2.75%;
-    border: 1px solid #0d65b8;
-    position: relative;
-}
+    background: url('/assets/images/device_1.jpg') no-repeat 0 0;
+    background-size: 100% 100%;
 
-.right-div {
-    float: left;
-    height: 960px;
-    width: 25%;
-    box-sizing: border-box;
-    // border: 2px solid white;
-    margin-left: 1%;
-
-}
-
-.right-div .electry-div {
-    height: 40%;
-    border: 1px solid #0d65b8;
-    position: relative;
-}
-
-.right-div .warn-div {
-    margin-top: 5%;
-    height: 20%;
-    border: 1px solid #0d65b8;
-    position: relative;
-
-}
-
-.right-div .real-time {
-    margin-top: 5%;
-    height: 35%;
-    border: 1px solid #0d65b8;
-    position: relative;
 }
