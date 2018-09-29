@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 [![Build Status](https://travis-ci.org/akveo/ngx-admin.svg?branch=master)](https://travis-ci.org/akveo/ngx-admin)
 [![Join the chat at https://gitter.im/ng2-admin/Lobby](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/ng2-admin/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Dependency Status](https://david-dm.org/akveo/ngx-admin/status.svg)](https://david-dm.org/akveo/ng2-admin)
@@ -90,3 +91,7 @@ We're always happy to receive your feedback!
 # Monitoring-Screen
 a monitoring screen demo
 >>>>>>> b0fad579816bb2139e7fe6874a6ccf057084eebc
+=======
+# monitoring-screen_V2
+monitoring screen version2.0
+>>>>>>> d8c1159a1f3d62730d723c4ed330acf4b7a82bd1
